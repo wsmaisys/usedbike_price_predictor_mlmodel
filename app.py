@@ -124,10 +124,42 @@ bike_power_dict = {
 brand_list = list(brand_bike_dict.keys())
 owner_list = ['First Owner', 'Second Owner', 'Third Owner', 'Fourth Owner Or More']
 
-st.set_page_config(page_title="Used Bike Price Predictor", layout="wide")
-st.title("🏍️ Used Bike Price Predictor")
+st.set_page_config(page_title="BikeValuePro - AI Bike Price Predictor", layout="wide", page_icon="🏍️")
 
-st.header("Fill in the bike details")
+# App Header
+st.markdown("<h1 style='text-align: center; font-size: 2.8rem;'>🏍️ BikeValuePro</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #555; font-weight: normal;'>AI-Powered Used Bike Price Predictor</h3>", unsafe_allow_html=True)
+
+# Create two columns for features
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown("""
+    <div style='background-color: #1c1e21; color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #17a2b8;'>
+        <h4 style='color: #17a2b8; margin-bottom: 15px;'>🎯 What BikeValuePro Does?</h4>
+        <ul style='margin-left: 20px;'>
+            <li>Instantly predict used bike market value</li>
+            <li>Uses advanced AI trained on real sales data</li>
+            <li>Provides 94.9% accurate price estimates</li>
+            <li>Delivers comprehensive market analysis</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+with col2:
+    st.markdown("""
+    <div style='background-color: #1c1e21; color: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #17a2b8;'>
+        <h4 style='color: #17a2b8; margin-bottom: 15px;'>🎯 How BikeValuePro Works?</h4>
+        <ul style='margin-left: 20px;'>
+            <li>Select your bike details and location</li>
+            <li>Get instant AI-powered price prediction</li>
+            <li>Receive smart insights on strengths/weaknesses</li>
+            <li>Make informed buying/selling decisions</li>
+        </ul>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.header("📝 Fill in your bike details for Prediction")
 
 # Create columns for layout
 col1, col2, col3 = st.columns(3)
