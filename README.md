@@ -32,6 +32,28 @@
 
 ---
 
+## 🐳 Run with Docker
+
+You can use BikeValuePro instantly with Docker:
+
+### 1. Pull the image from Docker Hub
+
+```bash
+docker pull wasimansariiitm/bikevaluepro-used_bike_price_predictor
+```
+
+### 2. Run the container
+
+```bash
+docker run -p 8501:8501 wasimansariiitm/bikevaluepro-used_bike_price_predictor
+```
+
+Then open [http://localhost:8501](http://localhost:8501) in your browser.
+
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-BikeValuePro-blue?logo=docker)](https://hub.docker.com/r/wasimansariiitm/bikevaluepro-used_bike_price_predictor)
+
+---
+
 ## 🖥️ How to Run Locally
 
 ### 1. Clone the repository
